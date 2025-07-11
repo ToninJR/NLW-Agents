@@ -9,7 +9,7 @@ const markdownToHTML = (text) => {
   const converter = new showdown.Converter();
   return converter.makeHtml(text);
 };
-// AIzaSyCh1jmTd2rwBzI8Jico-3GbJBrKulaKPJo
+
 const perguntarAI = async (question, game, apiKey) => {
   const model = "gemini-2.5-flash";
   const geminiURL = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
